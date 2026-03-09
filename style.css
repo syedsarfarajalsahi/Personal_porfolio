@@ -1,4 +1,27 @@
 h1{
-    color:rgb(17, 6, 160);
+    color:rgb(17, 6, 164);
     font-size: medium;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+}
+
+#card_1, #card_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
