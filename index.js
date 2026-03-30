@@ -1,6 +1,7 @@
 const whatsappBtn = document.getElementById("whatsappBtn");
+const phoneNumber = "919366100346";
 
 whatsappBtn.addEventListener("click", function () {
-  const phoneNumber = "919366100346"; // country code + number
-  window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  const whatsappURL = `https://wa.me/${phoneNumber}`;
+  window.open(whatsappURL, "_blank");
 });
