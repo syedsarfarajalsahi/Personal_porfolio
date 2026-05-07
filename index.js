@@ -6,3 +6,4 @@ whatsappBtn.addEventListener("click", () => {
   // Added window feature flags for additional security on redirect
   window.open(whatsappURL, "_blank", "noopener,noreferrer");
 });
+
