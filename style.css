@@ -8,6 +8,9 @@
   --hover-bg: #f9fafb;
   --wa-color: #25d366;
   --wa-hover: #1ebc57;
+  /* Add these below your WhatsApp variables */
+  --email-color: #2563eb; /* A standard interactive blue */
+  --email-hover: #1d4ed8;
 }
 
 * {
@@ -135,4 +138,31 @@ h1 {
   background: var(--wa-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.23);
+}
+
+/* Container to handle the side-by-side alignment */
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Specific styling for the email button */
+.email-btn {
+  background: var(--email-color);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.3); /* Blue glow */
+}
+
+.email-btn:hover {
+  background: var(--email-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+}
+
+/* Update your existing WhatsApp button width if using side-by-side */
+.contact-actions .btn {
+  flex: 1; /* Makes both buttons take up exactly 50% of the space */
+  padding: 14px 10px; /* Slightly reduced horizontal padding to prevent text overflow */
 }
